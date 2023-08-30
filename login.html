@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zomato Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 320px;
+        }
+
+        .login-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+
+        .input-container {
+            margin-bottom: 15px;
+        }
+
+        .input-container label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color: #c0392b;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .or-text {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .signup-button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .signup-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Zomato Login</h2>
+        <div class="input-container">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="button-container">
+            <button onclick="login()">Login</button>
+        </div>
+        <hr>
+        <p class="or-text">Or</p>
+        <div class="button-container">
+            <button class="signup-button" onclick="signup()">Sign Up</button>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            var usernameInput = document.getElementById("username");
+            var passwordInput = document.getElementById("password");
+
+            // Simplified login logic
+            if (usernameInput.value === "testuser" && passwordInput.value === "password") {
+                alert("Login successful. Redirecting to dashboard...");
+                // Redirect to dashboard or next page
+            } else {
+                alert("Invalid credentials. Please try again.");
+            }
+        }
+
+        function signup() {
+            alert("Redirecting to Zomato signup page...");
+            // You can redirect to Zomato's actual signup page or your own signup page
+        }
+    </script>
+</body>
+</html>
